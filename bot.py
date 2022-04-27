@@ -5,9 +5,9 @@ import praw;
 reddit = praw.Reddit(
     user_agent="KiAdiMundiBot by u/DarthEggo1",
     client_id="0XmospxqKil_CVVajzJF6A",
-    client_secret="XNTVkAXJ1tlXEuLa__Dy1vohc0gTDg",
+    client_secret="censored",
     username="Ki-Adi-MundiBot",
-    password="droidattackwookies",
+    password="censored",
 )
 import time
 
