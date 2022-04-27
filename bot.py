@@ -11,7 +11,7 @@ reddit = praw.Reddit(
 )
 import time
 
-greylist = ["Ki-Adi-MundiBot"]
+greylist = ["Ki-Adi-MundiBot", "Ahsoka_Tano_Bot", "Anakin_Skywalker_Bot", "BadBatchBot", "Battle-Droid-Bot", "Captain_Rex_Bot", "GeneralGrievous-Bot", "L17-Bot", "Maul_Bot", "Padme-Bot", "Qui-Gon_Jinn_Bot", "clone_trooper_bot", "jarjar_bot",]]
 subreddit = reddit.subreddit("PrequelMemes")
 KEYWORDS = ["palp", "wookies", "dooku", "maul" "young", "!ignoremundi"]
 word1 = ["palp"]
