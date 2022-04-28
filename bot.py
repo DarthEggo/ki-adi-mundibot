@@ -43,7 +43,9 @@ def reply(comment):
 	if check2 == 0:
 		if check == 0:
 			print("passed!")
-			if any(k.lower() in comment.body.lower() for k in word1):
+			if ignoreCheck(comment) == 0:
+				break;
+			elif any(k.lower() in comment.body.lower() for k in word1):
 				comment.reply("If he does not give up his emergency powers after the destruction of Grievous, then he should be removed from office")
 				print(comment.body)
 			elif any(k.lower() in comment.body.lower() for k in word2):
@@ -85,6 +87,8 @@ def ignoreCheck(comment):
             print("Sadly, " + comment.author.name + " has decided to no longer use our bot's services")
             blockMessage(comment.author.name)
             blacklist.append(comment.author.name)
+	    return 0
+    return 1
 
 def checkforgreylist(comment):
     b = 0
